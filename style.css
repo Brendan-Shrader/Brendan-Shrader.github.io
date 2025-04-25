@@ -1,0 +1,12 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.open-sans-light {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300; /* Light weight */
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
