@@ -1,3 +1,5 @@
+// Start local server by going to cmd -> directory -> run "light-server -s ."
+
 var http = require('http');
 var fs = require('fs'); // Require filesystem to read html files
 var index = fs.readFileSync('a.html')
