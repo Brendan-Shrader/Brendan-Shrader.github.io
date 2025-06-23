@@ -16,6 +16,7 @@
     --UCF_METALLIC_GOLD: #BA9B37;
     --LINKEDIN_BLUE: #0077B5;
     --GOOGLE_SCHOLAR_LINK: #27a9ba;
+    --HEADER_LINK_COLOR: #ff7280;
 }
 
 /* Major elements
@@ -23,16 +24,15 @@
 header {
     position: fixed;
     top: 0;
-    /*bottom: 0;*/
-    /*left: 0;*/
     right: 0;
     margin: 0;
     width: 100%;
-    height: var(--HEADER_HEIGHT); /* Adjust as needed */
+    min-height: var(--HEADER_HEIGHT); /* Adjust as needed */
     z-index: 1000; /* Ensures the header stays on top */
     color: white;
     background-color: black;
     box-shadow: 0 0px 8px 4px rgba(0, 0, 0, 0.6);
+    white-space: nowrap;
 }
 
 body {
@@ -40,18 +40,13 @@ body {
     padding-top: var(--HEADER_HEIGHT); /* Matches the header's height */
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
-    margin: 0;
-    width: 100% - var(--BODY_PADDING);
+    margin: auto;
+    max-width: 1200px;
     height: 100%;
     background: white;
     overflow-wrap: break-word;
+    text-align: justify;
 }
-
-/*body::after {
-  content: '';
-  display: block;
-  height: var(--FOOTER_HEIGHT);
-}*/
 
 footer {
     position: fixed;
@@ -71,7 +66,6 @@ footer {
     top: var(--HEADER_HEIGHT);
     left: 0;
     background: #ff9a52;
-    /*background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(188, 187, 255, 0.619) 50%, rgba(105, 76, 180, 0.767) 100%);*/
     background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 205, 187, 0.619) 50%, rgba(180, 76, 123, 0.767) 100%);
     height: 40px;
     margin: 0;
@@ -96,7 +90,7 @@ footer {
 }
 
 .header-subtitle {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
@@ -104,14 +98,13 @@ footer {
 }
 
 /* IDs */
+/* --- */
 #utah-picture {
     float: right;
-    max-width: 50%;
-    /*max-height: 1000px;
-    height: auto;*/
+    max-width: 30%;
     width: 500px;
+    padding-left: 5%; /* add space between text and picture */
     height: 900px;
-    padding-left: 5em;
     object-fit: cover;
     object-position: 60% 100%;
 }
@@ -133,5 +126,9 @@ footer {
 }
 
 #ucf-metallic-gold-link {
-    color:var(--UCF_METALLIC_GOLD);
+    color: var(--UCF_METALLIC_GOLD);
+}
+
+#header-link {
+    color: var(--HEADER_LINK_COLOR);
 }

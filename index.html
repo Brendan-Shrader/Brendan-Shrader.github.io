@@ -1,52 +1,42 @@
+<!-- Main html page 
+     Start local server by going to cmd -> directory -> run "light-server -s ."
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-
-    <!-- Prevents caching of website so that it updates immediately -->
-    <meta http-equiv='cache-control' content='no-cache'> 
-    <meta http-equiv='expires' content='0'> 
-    <meta http-equiv='pragma' content='no-cache'>
-
-    <title>Brendan Shrader</title>
-
-    <!-- Link Google Fonts and Open Sans-->
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="scripts.js"></script>
 </head>
 
 <!-- Header -->
 <header>
-    <center><h1 class="header-title">Brendan Shrader</h1></center>
-    <center><h2 class="header-subtitle">
-        Email: <a href="mailto:bshrader7@gatech.edu" id="gt-email-link">bshrader7@gatech.edu</a> 
-        &emsp; Linkedin: <a href="https://www.linkedin.com/in/brendanshrader/" id="linkedin-link">linkedin.com/in/brendanshrader/</a>
-        &emsp; Google Scholar: <a href="https://scholar.google.com/citations?user=Rk-L2SIAAAAJ&hl=en" id="google-scholar-link">scholar.google.com</a>
-    </h2></center>
-    <div class="gradient"></div>
+    <div id="includedHeader"></div>
 </header>
 
-<p>&emsp;</p> <!-- Add vertical white space -->
+<!-- Vertical white space -->
+<p>&emsp;</p> 
 
 <!-- Body -->
 <body>
     <h1>Hello, I'm Brendan</h1>
     <img src="Images/utah_picture.jpg" alt="Picture of me in Utah" id="utah-picture">
     <p>Welcome to my website! I am an incoming student in Georgia Tech's 
-        <a href="https://qbios.gatech.edu/" id="gt-dark-link">Quantitative Biosciences (QBioS) PhD program</a>.</p>
+        <a href="https://qbios.gatech.edu/" id="gt-dark-link">Quantitative Biosciences (QBioS) PhD program</a>
+        in the School of Mathematics.
+    </p>
     
+    <h2>About</h2>
     <p>
-        I completed a B.S. in Mathematics at the University of Central Florida in May 2025, with a minor in computer science. I am generally interested in mathematical biology, differential equations, advanced calculus, and the connections between them. I have participated in two NSF-funded undergraduate research programs, with topics ranging from epidemiological modeling to bacterial population dynamics 
+        I completed a B.S. in Mathematics at the University of Central Florida (UCF) in May 2025, with a minor in computer science. I am generally interested in mathematical biology, differential equations, advanced calculus, and the connections between them. I have participated in two NSF-funded undergraduate research programs, with topics ranging from epidemiological modeling to bacterial population dynamics 
         (<a href="https://math.gatech.edu/undergraduate-research" id="gt-dark-link">GT Math REU 2024</a>, 
         <a href="https://sciences.ucf.edu/math/reu-in-applied-computational-mathematics/" id="ucf-metallic-gold-link">UCF Math REU 2023</a>).
         My <a href="https://stars.library.ucf.edu/hut2024/241/" id="ucf-metallic-gold-link">UCF Honors Undergraduate Thesis</a>, mentored by Prof. Zhisheng Shuai, examines an SIR epidemic model to understand 1) the role of incidence rates in producing periodic epidemics, 2) the impact of partial immunity on disease endemicity, and 3) the utility of rational Lyapunov functions to prove the global stability of disease-free equilibria.
     </p>
 
     <p>
-        While I'm originally from Long Island, NY, I grew up in Jacksonville, FL. I spend my free time socializing, working out (swimming, weightlifting), playing the piano, or playing video games.
+        While I'm originally from Long Island, NY, I grew up in Jacksonville, FL. I spend my free time socializing, working out (swimming, weightlifting), playing the piano, or playing video games. When I am able to, I like to travel to new cities, national parks, and amusement parks.
     </p>
 
     <h2>Academic Interests</h2>
@@ -57,6 +47,9 @@
     </ul>
 </body>
 
-<footer>&emsp;Last updated June 23, 2025</footer>
+<!-- Footer -->
+<footer>
+    <div id="includedFooter"></div>
+</footer>
 
 </html>
