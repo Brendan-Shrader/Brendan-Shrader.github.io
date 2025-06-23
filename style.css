@@ -1,7 +1,25 @@
+/* Global variables & constants
+   ---------------------------- */
+:root {
+    /* Lengths & heights */
+    --HEADER_HEIGHT: 180px;
+    --HEADER_TITLE_FONTSIZE: 50px;
+    --HEADER_SUBTITLE_FONTSIZE: 20px;
+
+    --BODY_PADDING: 4em;
+
+    /* Colors */
+    --GT_GOLD: #B3A369;
+    --GT_GOLD_DARKER: #8e8255;
+    --LINKEDIN_BLUE: #0077B5;
+    --GOOGLE_SCHOLAR_LINK: #27a9ba;
+}
+
+/* Major elements
+   -------------- */
 header {
     color: white;
     background-color: black;
-    font-size: 20px;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -9,29 +27,35 @@ header {
     right: 0;
     margin: 0;
     width: 100%;
-    height: 100px; /* Adjust as needed */
+    height: var(--HEADER_HEIGHT); /* Adjust as needed */
     z-index: 1000; /* Ensures the header stays on top */
     box-shadow: 0 0px 8px 4px rgba(0, 0, 0, 0.6);
 }
 
-.grad {
-    position: relative;
-    left: -2em;
-    background: #ff9a52;
-    background: linear-gradient(0deg, rgba(255, 154, 82, 0) 0%, rgba(255, 178, 106, 0.84) 50%, rgb(129, 29, 118) 100%);
-    height: 69px;
-    margin: 0;
-    width: 100%;
-}
-
 body {
-    padding-left: 2em;
-    padding-top: 100px; /* Matches the header's height */
+    padding: var(--BODY_PADDING);
+    padding-top: var(--HEADER_HEIGHT); /* Matches the header's height */
     font-family: "Open Sans", sans-serif;
+    font-size: 18px;
     margin: 0;
-    width: 100%;
+    width: 100% - var(--BODY_PADDING);
     height: 100%;
     background: white;
+    overflow-wrap: break-word;
+}
+
+/* Classes
+   ------- */
+.gradient {
+    position: fixed;
+    top: var(--HEADER_HEIGHT);
+    left: 0;
+    background: #ff9a52;
+    /*background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(188, 187, 255, 0.619) 50%, rgba(105, 76, 180, 0.767) 100%);*/
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 205, 187, 0.619) 50%, rgba(180, 76, 123, 0.767) 100%);
+    height: 40px;
+    margin: 0;
+    width: 100%;
 }
 
 .open-sans-light {
@@ -43,9 +67,46 @@ body {
       "wdth" 100;
   }
 
-.montserrat-title {
+.header-title {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+    font-size: var(--HEADER_TITLE_FONTSIZE);
+}
+
+.header-subtitle {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: var(--HEADER_SUBTITLE_FONTSIZE);
+}
+
+/* IDs */
+#utah-picture {
+    float: right;
+    max-width: 50%;
+    /*max-height: 1000px;
+    height: auto;*/
+    width: 500px;
+    height: 900px;
+    object-fit: cover;
+    object-position: 60% 100%;
+}
+
+#gt-email-link {
+    color: var(--GT_GOLD);
+}
+
+#linkedin-link {
+    color: var(--LINKEDIN_BLUE);
+}
+
+#google-scholar-link {
+    color: var(--GOOGLE_SCHOLAR_LINK);
+}
+
+#gt-qbios-link {
+    color: var(--GT_GOLD_DARKER);
 }
