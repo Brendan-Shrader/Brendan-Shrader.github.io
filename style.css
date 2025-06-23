@@ -6,11 +6,14 @@
     --HEADER_TITLE_FONTSIZE: 50px;
     --HEADER_SUBTITLE_FONTSIZE: 20px;
 
+    --FOOTER_HEIGHT: 30px;
+
     --BODY_PADDING: 4em;
 
     /* Colors */
     --GT_GOLD: #B3A369;
     --GT_GOLD_DARKER: #8e8255;
+    --UCF_METALLIC_GOLD: #BA9B37;
     --LINKEDIN_BLUE: #0077B5;
     --GOOGLE_SCHOLAR_LINK: #27a9ba;
 }
@@ -18,17 +21,17 @@
 /* Major elements
    -------------- */
 header {
-    color: white;
-    background-color: black;
     position: fixed;
     top: 0;
-    bottom: 0;
-    left: 0;
+    /*bottom: 0;*/
+    /*left: 0;*/
     right: 0;
     margin: 0;
     width: 100%;
     height: var(--HEADER_HEIGHT); /* Adjust as needed */
     z-index: 1000; /* Ensures the header stays on top */
+    color: white;
+    background-color: black;
     box-shadow: 0 0px 8px 4px rgba(0, 0, 0, 0.6);
 }
 
@@ -42,6 +45,23 @@ body {
     height: 100%;
     background: white;
     overflow-wrap: break-word;
+}
+
+/*body::after {
+  content: '';
+  display: block;
+  height: var(--FOOTER_HEIGHT);
+}*/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    color: black;
+    background-color: white;
+    width: 100%;
+    height: var(--FOOTER_HEIGHT);
 }
 
 /* Classes
@@ -91,6 +111,7 @@ body {
     height: auto;*/
     width: 500px;
     height: 900px;
+    padding-left: 5em;
     object-fit: cover;
     object-position: 60% 100%;
 }
@@ -107,6 +128,10 @@ body {
     color: var(--GOOGLE_SCHOLAR_LINK);
 }
 
-#gt-qbios-link {
+#gt-dark-link {
     color: var(--GT_GOLD_DARKER);
+}
+
+#ucf-metallic-gold-link {
+    color:var(--UCF_METALLIC_GOLD);
 }
