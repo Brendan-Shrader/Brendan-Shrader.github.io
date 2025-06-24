@@ -8,10 +8,10 @@ $(function(){
 
 // Load header html document
 $(function(){
-    $("#includedHeader").load("header.html"); 
+    $("#includeHeader").load("header.html"); 
 });
 
 // Load footer html document
 $(function(){
-    $("#includedFooter").load("footer.html"); 
+    $("#includeFooter").load("footer.html"); 
 });

@@ -16,7 +16,19 @@
     --UCF_METALLIC_GOLD: #BA9B37;
     --LINKEDIN_BLUE: #0077B5;
     --GOOGLE_SCHOLAR_LINK: #27a9ba;
-    --HEADER_LINK_COLOR: #ff7280;
+    --HEADER_LINK_COLOR: #ffa5ae;
+    --WARNING_TEXT_COLOR: red;
+
+    /* FONTS */
+    --HEADER_FONT: "Montserrat", sans-serif;
+    --HEADER_FONT_OPTICAL_SIZING: auto; /* Not used; default value is auto */
+    --HEADER_FONT_WEIGHT: 300;
+    --HEADER_FONT_STYLE: normal; /* Not used; default value is normal */
+    --BODY_FONT: "Open sans", sans-serif;
+    --H1_FONT_SIZE: 40px;
+    --H1_FONT_WEIGHT: 700;
+    --H2_FONT_SIZE: 26px;
+    --H2_FONT_WEIGHT: 700;
 }
 
 /* Major elements
@@ -38,14 +50,27 @@ header {
 body {
     padding: var(--BODY_PADDING);
     padding-top: var(--HEADER_HEIGHT); /* Matches the header's height */
-    font-family: "Open Sans", sans-serif;
+    font-family: var(--BODY_FONT);
     font-size: 18px;
+    font-weight: 400;
     margin: auto;
     max-width: 1200px;
     height: 100%;
     background: white;
     overflow-wrap: break-word;
     text-align: justify;
+}
+
+h1 {
+    font-family: var(--BODY_FONT);
+    font-size: var(--H1_FONT_SIZE);
+    font-weight: var(--H1_FONT_WEIGHT);
+}
+
+h2 {
+    font-family: var(--BODY_FONT);
+    font-size: var(--H2_FONT_SIZE);
+    font-weight: var(--H2_FONT_WEIGHT);
 }
 
 footer {
@@ -59,9 +84,9 @@ footer {
     height: var(--FOOTER_HEIGHT);
 }
 
-/* Classes
-   ------- */
-.gradient {
+/* IDs */
+/* --- */
+#gradient {
     position: fixed;
     top: var(--HEADER_HEIGHT);
     left: 0;
@@ -72,33 +97,18 @@ footer {
     width: 100%;
 }
 
-.open-sans-light {
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300; /* Light weight */
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
-
-.header-title {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
+#header-title {
+    font-family: var(--HEADER_FONT);
+    font-weight: var(--HEADER_FONT_WEIGHT);
     font-size: var(--HEADER_TITLE_FONTSIZE);
 }
 
-.header-subtitle {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
+#header-subtitle {
+    font-family: var(--HEADER_FONT);
+    font-weight: var(--HEADER_FONT_WEIGHT);
     font-size: var(--HEADER_SUBTITLE_FONTSIZE);
 }
 
-/* IDs */
-/* --- */
 #utah-picture {
     float: right;
     max-width: 30%;
@@ -131,4 +141,30 @@ footer {
 
 #header-link {
     color: var(--HEADER_LINK_COLOR);
+}
+
+#warning-text {
+    color: var(--WARNING_TEXT_COLOR);
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Hyperlink behavior
+   ------------------ */
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
 }
