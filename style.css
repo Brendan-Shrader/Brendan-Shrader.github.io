@@ -9,6 +9,7 @@
     --FOOTER_HEIGHT: 30px;
 
     --BODY_PADDING: 4em;
+    --BODY_MAX_WIDTH: 1200px;
 
     /* Colors */
     --GT_GOLD: #B3A369;
@@ -54,11 +55,11 @@ body {
     font-size: 18px;
     font-weight: 400;
     margin: auto;
-    max-width: 1200px;
+    max-width: var(--BODY_MAX_WIDTH);
     height: 100%;
     background: white;
     overflow-wrap: break-word;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 h1 {
@@ -82,6 +83,19 @@ footer {
     background-color: white;
     width: 100%;
     height: var(--FOOTER_HEIGHT);
+}
+
+figure > img {
+    display: block;
+}
+
+figcaption {
+    background-color: white;
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    clear: both;
 }
 
 /* IDs */
@@ -109,14 +123,41 @@ footer {
     font-size: var(--HEADER_SUBTITLE_FONTSIZE);
 }
 
-#utah-picture {
+#utah-figure {
     float: right;
     max-width: 30%;
     width: 500px;
-    padding-left: 5%; /* add space between text and picture */
+    margin-left: 2em; /* add space between text and picture */
+    height: auto;
+    caption-side: bottom;
+}
+
+#utah-picture {
+    float: right;
+    max-width: 100%;
+    width: 500px;
+    margin-left: 5%; /* add space between text and picture */
     height: 900px;
     object-fit: cover;
     object-position: 60% 100%;
+    border: 0px solid #000000;
+}
+
+#atlanta-skyline-figure {
+    position: absolute;
+    bottom: 5em;
+    width: var(--BODY_MAX_WIDTH);
+    height: auto;
+    margin: 0;
+}
+
+#atlanta-skyline-picture {
+    max-width: 100%;
+    width: var(--BODY_MAX_WIDTH);
+    height: 600px;
+    object-fit: cover;
+    object-position: 50% 20%;
+    border: 0px solid black;
 }
 
 #gt-email-link {
