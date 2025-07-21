@@ -19,6 +19,7 @@
     --GOOGLE_SCHOLAR_LINK: #27a9ba;
     --HEADER_LINK_COLOR: #ffa5ae;
     --WARNING_TEXT_COLOR: red;
+    --SUBPAGE_LINK_COLOR: #c15a64;
 
     /* FONTS */
     --HEADER_FONT: "Montserrat", sans-serif;
@@ -143,6 +144,42 @@ figcaption {
     border: 0px solid #000000;
 }
 
+#HUT-figure {
+    float: right;
+    max-width: 50%;
+    width: 400px;
+    margin-left: 2em; /* add space between text and picture */
+    height: auto;
+    caption-side: bottom;
+}
+
+#HUT-picture {
+    float: right;
+    max-width: 100%;
+    margin-left: 5%; /* add space between text and picture */
+    height: auto;
+    object-fit: scale-down;
+    border: 0px solid #000000;
+}
+
+#GT-REU-figure {
+    float: right;
+    max-width: 50%;
+    width: 400px;
+    margin-left: 2em; /* add space between text and picture */
+    height: auto;
+    caption-side: bottom;
+}
+
+#GT-REU-picture {
+    float: right;
+    max-width: 100%;
+    margin-left: 5%; /* add space between text and picture */
+    height: auto;
+    object-fit: scale-down;
+    border: 0px solid #000000;
+}
+
 #atlanta-skyline-figure {
     position: absolute;
     bottom: 5em;
@@ -202,6 +239,10 @@ figcaption {
 
 #header-link {
     color: var(--HEADER_LINK_COLOR);
+}
+
+#subpage-link {
+    color: var(--SUBPAGE_LINK_COLOR);
 }
 
 #warning-text {
