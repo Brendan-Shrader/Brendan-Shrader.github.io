@@ -36,7 +36,7 @@
 /* Major elements
    -------------- */
 header {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     margin: 0;
@@ -102,7 +102,7 @@ figcaption {
 /* IDs */
 /* --- */
 #gradient {
-    position: fixed;
+    position: absolute;
     top: var(--HEADER_HEIGHT);
     left: 0;
     background: #ff9a52;
@@ -167,6 +167,7 @@ figcaption {
     max-width: 50%;
     width: 400px;
     margin-left: 2em; /* add space between text and picture */
+    padding-bottom: 20px;
     height: auto;
     caption-side: bottom;
 }
