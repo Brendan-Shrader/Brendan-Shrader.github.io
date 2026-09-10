@@ -309,6 +309,31 @@ figcaption {
   color: var(--muted);
 }
 
+.photography-page h1 {
+  margin-bottom: 48px;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+  align-items: start;
+}
+
+.photograph {
+  display: block;
+}
+
+.photograph img {
+  width: 100%;
+  height: auto;
+}
+
+.photograph:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 6px;
+}
+
 .research-section {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
@@ -330,6 +355,9 @@ figcaption {
 
 .research-figure {
   margin: 0;
+  width: fit-content;
+  max-width: 100%;
+  justify-self: center;
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -337,9 +365,10 @@ figcaption {
 }
 
 .research-figure img {
-  width: 100%;
+  width: auto;
+  height: auto;
+  max-width: 100%;
   max-height: 430px;
-  object-fit: contain;
   background: #f7f7f4;
 }
 
@@ -390,6 +419,11 @@ figcaption {
 }
 
 @media (max-width: 560px) {
+  .photo-gallery {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
   body {
     font-size: 16px;
   }
