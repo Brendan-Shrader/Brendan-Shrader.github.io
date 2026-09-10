@@ -1,51 +1,144 @@
-<!-- Main html page -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <script src="jquery-3.7.1.min.js"></script>
-    <script src="scripts.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Brendan Shrader — Ph.D. student in Quantitative Biosciences at Georgia Tech working in mathematical biology.">
+  <title>Brendan Shrader</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="site-name" href="index.html">Brendan Shrader</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="research.html">Research</a>
+      </nav>
+    </div>
+  </header>
 
-<!-- Header -->
-<header>
-    <div id="includeHeader"></div>
-</header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">MATHEMATICAL BIOLOGY · DYNAMICAL SYSTEMS · STOCHASTIC MODELING</p>
+        <h1>Brendan Shrader</h1>
+        <p class="lead">
+          I am a Ph.D. student in the
+          <a href="https://qbios.gatech.edu/">Quantitative Biosciences program</a>
+          at Georgia Tech, where I study mathematical questions arising in biology.
+        </p>
+        <p class="hero-text">
+          My interests include mathematical epidemiology, microbial population dynamics,
+          differential equations, stochastic processes, and multiscale modeling. I am
+          particularly interested in how mechanisms operating at cellular or within-host
+          scales shape population-level behavior.
+        </p>
 
-<!-- Vertical white space -->
-<p>&emsp;</p> 
+        <div class="link-row" aria-label="Profile links">
+          <a class="button primary" href="research.html">Research</a>
+          <a class="button" href="CV.pdf">CV</a>
+          <a class="button" href="mailto:bshrader7@gatech.edu">Email</a>
+        </div>
 
-<!-- Body -->
-<body>  
-    <figure id="utah-figure">
-        <img src="Images/utah_picture.jpg" alt="Picture of me in Utah" id="utah-picture">
-        <figcaption>Bryce Canyon, UT</figcaption>
-    </figure>
+        <div class="text-links">
+          <a href="https://scholar.google.com/citations?user=Rk-L2SIAAAAJ&hl=en">Google Scholar</a>
+          <span aria-hidden="true">/</span>
+          <a href="https://www.linkedin.com/in/brendanshrader">LinkedIn</a>
+          <span aria-hidden="true">/</span>
+          <a href="https://github.com/Brendan-Shrader">GitHub</a>
+        </div>
+      </div>
 
-    <h1>Hello, I'm Brendan</h1>
-    <!-- <img src="Images/utah_picture.jpg" alt="Picture of me in Utah" id="utah-picture"> -->
-    <p>Welcome to my website! I am a first-year Ph.D. student in Georgia Tech's 
-        <a href="https://qbios.gatech.edu/" id="gt-dark-link">Quantitative Biosciences (QBioS) program</a>
-        in the School of Mathematics.
-    </p>
-    
-    <h2>About</h2>
-    <p>
-        I completed a B.S. in Mathematics at the University of Central Florida (UCF) in May 2025, with a minor in computer science. I am generally interested in mathematical biology, differential equations, advanced calculus, and the connections between them. I have participated in two NSF-funded undergraduate research programs, with topics ranging from epidemiological modeling to bacterial population dynamics. See the <a href="/research.html" id="subpage-link">Research</a> page for more info on these projects.
-    </p>
+      <figure class="portrait-card">
+        <img src="Images/utah_picture.jpg" alt="Brendan Shrader at Bryce Canyon, Utah">
+        <figcaption>Bryce Canyon, Utah</figcaption>
+      </figure>
+    </section>
 
-    <p>
-        <a href="./Shrader_CV_9-13-2025.pdf" download><button class="button" id="CV-button">Download CV</button></a>
-        <a href="mailto:bshrader7@gatech.edu"><button class="button" id="CV-button">Email</button></a>
-        <a href="https://www.linkedin.com/in/brendanshrader"><button class="button" id="CV-button">LinkedIn</button></a>
-        <a href="https://scholar.google.com/citations?user=Rk-L2SIAAAAJ&hl=en"><button class="button" id="CV-button">Google Scholar</button></a>
-    </p>
+    <section class="section">
+      <div class="section-heading">
+        <p class="section-number">01</p>
+        <h2>About</h2>
+      </div>
+      <div class="about-grid">
+        <div>
+          <p>
+            I completed a B.S. in Mathematics at the University of Central Florida in 2025,
+            with a minor in Computer Science. My undergraduate research introduced me to
+            mathematical epidemiology and led to an honors thesis on disease endemicity,
+            partial immunity, and post-infection mortality.
+          </p>
+          <p>
+            I later worked on models of bacterial communication and population dynamics at
+            Georgia Tech. My current interests sit at the intersection of these areas:
+            combining deterministic and stochastic models to connect biological mechanisms
+            across scales.
+          </p>
+        </div>
+
+        <aside class="info-panel">
+          <div class="info-item">
+            <span class="info-label">Program</span>
+            <span>Ph.D. in Quantitative Biosciences</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Institution</span>
+            <span>Georgia Institute of Technology</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Background</span>
+            <span>B.S. Mathematics, UCF</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Focus</span>
+            <span>Mathematical biology</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section research-preview">
+      <div class="section-heading">
+        <p class="section-number">02</p>
+        <h2>Research directions</h2>
+      </div>
+
+      <div class="topic-grid">
+        <article class="topic-card">
+          <p class="topic-tag pink">EPIDEMIOLOGY</p>
+          <h3>Disease dynamics</h3>
+          <p>
+            Dynamical-systems approaches to endemicity, reinfection, partial immunity,
+            density dependence, and interacting biological mechanisms.
+          </p>
+        </article>
+
+        <article class="topic-card">
+          <p class="topic-tag green">MICROBIAL SYSTEMS</p>
+          <h3>Population dynamics</h3>
+          <p>
+            Models of bacterial communication, quorum sensing, ecological interactions,
+            phenotypic heterogeneity, and evolutionary change.
+          </p>
+        </article>
+
+        <article class="topic-card">
+          <p class="topic-tag blue">MULTISCALE MODELING</p>
+          <h3>Deterministic + stochastic</h3>
+          <p>
+            ODE, SDE, and PDE models that connect stochastic cellular-level behavior to
+            within-host and population-scale outcomes.
+          </p>
+        </article>
+      </div>
+
+      <p class="section-link"><a href="research.html">View research →</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Brendan Shrader · Georgia Tech</p>
+  </footer>
 </body>
-
-<!-- Footer -->
-<footer>
-    <div id="includeFooter"></div>
-</footer>
-
 </html>

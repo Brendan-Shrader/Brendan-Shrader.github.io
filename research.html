@@ -1,46 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link rel="stylesheet" href="style.css">
-    <script src="jquery-3.7.1.min.js"></script>
-    <script src="scripts.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Research by Brendan Shrader in mathematical biology, epidemiology, microbial dynamics, and stochastic modeling.">
+  <title>Research | Brendan Shrader</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
-<header>
-    <div id="includeHeader"></div>
-</header>
-
-<p>&emsp;</p> <!-- Add vertical white space -->
-
 <body>
-    <h1>Research</h1>
-    <h2>Mathematical Epidemiology</h2>  
-        <figure id="HUT-figure">
-            <img src="Images/HUT_bifurcation_diagram.png" id="HUT-picture">
-            <figcaption>Fig 1: A bifurcation diagram from my UCF HUT.</figcaption>
-        </figure>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="site-name" href="index.html">Brendan Shrader</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="research.html">Research</a>
+      </nav>
+    </div>
+  </header>
 
+  <main>
+    <section class="page-intro">
+      <p class="eyebrow">RESEARCH</p>
+      <h1>Mathematical models for biological systems.</h1>
+      <p class="lead narrow">
+        I use tools from dynamical systems, differential equations, probability, and
+        computation to study biological processes across scales.
+      </p>
+    </section>
+
+    <section class="section research-section">
+      <div class="research-copy">
+        <p class="topic-tag pink">MATHEMATICAL EPIDEMIOLOGY</p>
+        <h2>Infection dynamics and endemicity</h2>
         <p>
-            I began researching mathematical epidemiology in the summer of 2023 as a part of the University of Central Florida's (UCF) NSF-funded <a href="https://sciences.ucf.edu/math/reu-in-applied-computational-mathematics/" id="ucf-metallic-gold-link">Research Experience for Undergraduates (REU) in Applied and Computational Mathematics</a> under Prof. Zhisheng Shuai. I carried out analysis on the ordinary differential equation (ODE) compartmental SIR model depicted in Fig 1. I proved the uniqueness and stability of the disease-free and endemic equilibria, and proved global stability for the disease-free equilibirum.
+          My first research project began in the 2023 UCF Applied and Computational
+          Mathematics REU with Prof. Zhisheng Shuai. I studied compartmental epidemic models,
+          focusing on how post-infection mortality and partial immunity alter long-term
+          disease behavior.
         </p>
-
         <p>
-            This lead to my <a href="https://stars.library.ucf.edu/hut2024/241/" id="ucf-metallic-gold-link">Honors Undergraduate Thesis (HUT)</a>, also mentored by Zhisheng, where I quantified the effects of important parameters on long-term outbreak outcomes and generalized my method of proving the global stability of the disease-free equilibrium. This led to several presentations, including ones at JMM 2024, SMB MathEpiOnco 2024, and JMM 2025.
+          This work developed into my honors undergraduate thesis,
+          <em>A Mathematical Modeling Approach to Investigate the Impacts of
+          Post-Infection Mortality and Partial Immunity on Disease Endemicity</em>.
+          The project combined equilibrium and stability analysis with questions about
+          reinfection and disease persistence.
         </p>
-        
-    <h2>Bacteria Population Dynamics</h2>
-        <figure id="GT-REU-figure">
-            <img src="Images/GT_REU_phase_plane.jpeg" id="GT-REU-picture">
-            <figcaption>A phase-plane portrait from my GT REU project.</figcaption>
-        </figure>
+        <p>
+          More broadly, I am interested in incidence functions, multistrain systems,
+          vaccination, ecological interactions among pathogens, and rigorous global
+          analysis of epidemiological models.
+        </p>
+      </div>
 
-        <p>In the summer of 2024, I attended <a href="https://math.gatech.edu/undergraduate-research" id="gt-dark-link">Georiga Tech's (GT) Mathematics REU</a>, where I explored and analyze multiple ODE models of bacteria population growth and communication under the mentorship of Profs. Rachel Kuske (GT Math) and Sam Brown (GT Biosciences).</p>
+      <figure class="research-figure">
+        <img src="Images/HUT_bifurcation_diagram.png" alt="Bifurcation diagram from Brendan Shrader's undergraduate thesis research">
+        <figcaption>Bifurcation diagram from my undergraduate epidemiology work.</figcaption>
+      </figure>
+    </section>
 
+    <section class="section research-section reverse">
+      <div class="research-copy">
+        <p class="topic-tag green">MICROBIAL POPULATION DYNAMICS</p>
+        <h2>Quorum sensing and bacterial heterogeneity</h2>
+        <p>
+          During the 2024 Georgia Tech Mathematics REU, I worked with Profs. Rachel Kuske
+          and Sam Brown on mathematical models of bacterial population growth and
+          communication, with an emphasis on quorum sensing in
+          <em>Pseudomonas aeruginosa</em>.
+        </p>
+        <p>
+          A central question is how cell-to-cell variability and switching behavior can
+          produce heterogeneous or bimodal population-level responses. This naturally
+          connects deterministic population models with stochastic descriptions of
+          individual-level behavior.
+        </p>
+      </div>
+
+      <figure class="research-figure">
+        <img src="Images/GT_REU_phase_plane.jpeg" alt="Phase-plane portrait from Brendan Shrader's Georgia Tech REU project">
+        <figcaption>Phase-plane portrait from my Georgia Tech REU project.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section current-work">
+      <div class="section-heading">
+        <p class="section-number">CURRENT</p>
+        <h2>Questions I am interested in now</h2>
+      </div>
+
+      <div class="question-list">
+        <article>
+          <span class="question-index">01</span>
+          <div>
+            <h3>How does stochastic switching scale up?</h3>
+            <p>
+              Connecting stochastic biochemical or gene-regulatory dynamics to
+              phenotypic heterogeneity at the population level.
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <span class="question-index">02</span>
+          <div>
+            <h3>How do microbial interactions affect infection?</h3>
+            <p>
+              Linking microbial ecology, competition, communication, and evolution to
+              within-host and epidemiological dynamics.
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <span class="question-index">03</span>
+          <div>
+            <h3>Which mathematical structures make global behavior tractable?</h3>
+            <p>
+              Using stability theory, Lyapunov methods, nondimensionalization, and
+              carefully chosen model structure to understand nonlinear biological systems.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Brendan Shrader · Georgia Tech</p>
+  </footer>
 </body>
-
-<footer>
-    <div id="includeFooter"></div>
-</footer>
-
 </html>
