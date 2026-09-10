@@ -280,12 +280,7 @@ figcaption {
   font-size: clamp(3rem, 6vw, 5rem);
 }
 
-.publications-page {
-  padding: 90px 0;
-}
-
 .publications-page h1 {
-  font-size: clamp(2.5rem, 6vw, 4rem);
   margin-bottom: 48px;
 }
 
@@ -297,11 +292,9 @@ figcaption {
   margin-top: 32px;
 }
 
-.publication h2 {
-  margin-bottom: 12px;
-  font-size: 1.25rem;
-  line-height: 1.5;
-  letter-spacing: normal;
+.publication-citation {
+  padding-left: 1.5em;
+  text-indent: -1.5em;
 }
 
 .publication p {
