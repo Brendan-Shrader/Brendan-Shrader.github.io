@@ -76,7 +76,7 @@ a:focus-visible {
 }
 
 .site-name::before {
-  content: "> ";
+  content: "· ";
   color: var(--blue);
 }
 
@@ -110,19 +110,8 @@ main {
   align-items: center;
 }
 
-.eyebrow,
-.topic-tag,
-.section-number,
 .info-label {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-}
-
-.eyebrow {
-  margin: 0 0 18px;
-  color: var(--blue);
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
 }
 
 h1,
@@ -234,21 +223,10 @@ figcaption {
 
 .section-heading {
   margin-bottom: 40px;
-  display: grid;
-  grid-template-columns: 82px 1fr;
-  align-items: baseline;
 }
 
 .section-heading h2 {
   margin-bottom: 0;
-}
-
-.section-number {
-  margin: 0;
-  color: var(--pink);
-  font-size: 0.77rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
 }
 
 .about-grid {
@@ -293,26 +271,6 @@ figcaption {
 }
 
 
-.topic-tag {
-  margin-bottom: 12px;
-  font-size: 0.73rem;
-  font-weight: 700;
-  letter-spacing: 0.09em;
-}
-
-.topic-tag.pink {
-  color: var(--pink);
-}
-
-.topic-tag.orange {
-  color: var(--orange);
-}
-
-.topic-tag.blue {
-  color: var(--blue);
-}
-
-
 .page-intro {
   padding: 110px 0 90px;
 }
@@ -337,7 +295,7 @@ figcaption {
   order: 1;
 }
 
-.research-copy p:not(.topic-tag) {
+.research-copy p {
   color: var(--muted);
 }
 
@@ -433,10 +391,6 @@ figcaption {
 
   .section {
     padding: 65px 0;
-  }
-
-  .section-heading {
-    grid-template-columns: 56px 1fr;
   }
 
   .portrait-card {
