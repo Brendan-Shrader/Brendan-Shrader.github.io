@@ -280,6 +280,35 @@ figcaption {
   font-size: clamp(3rem, 6vw, 5rem);
 }
 
+.publications-page {
+  padding: 90px 0;
+}
+
+.publications-page h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  margin-bottom: 48px;
+}
+
+.publication-list {
+  max-width: 800px;
+}
+
+.publication + .publication {
+  margin-top: 32px;
+}
+
+.publication h2 {
+  margin-bottom: 12px;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.publication p {
+  margin-bottom: 4px;
+  color: var(--muted);
+}
+
 .research-section {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
@@ -370,6 +399,9 @@ figcaption {
 
   .nav-wrap {
     min-height: 64px;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+    padding: 16px 0;
   }
 
   .site-name {
