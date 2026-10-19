@@ -377,7 +377,7 @@ figcaption {
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  background: #f7f7f4;
+  background: #ffffff;
 }
 
 .research-figure img {
